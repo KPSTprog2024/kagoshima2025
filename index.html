@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鹿児島家族旅行しおり</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- トップページ -->
+    <div id="top-page" class="page">
+        <div class="container">
+            <header class="top-header">
+                <h1>🌋 鹿児島家族旅行しおり ✈️</h1>
+                <div class="trip-info">
+                    <p class="trip-dates">2025年10月10日〜10月13日</p>
+                    <p class="trip-duration">3泊4日の冒険が始まる！</p>
+                </div>
+                <div id="countdown" class="countdown">
+                    <p>旅行まであと <span id="countdown-days">--</span> 日！</p>
+                </div>
+            </header>
+
+            <div class="view-selector">
+                <button id="adult-btn" class="btn btn--primary view-btn">
+                    👨‍👩‍👧‍👦 大人向けプラン
+                    <span class="btn-desc">詳細スケジュール</span>
+                </button>
+                <button id="kids-btn" class="btn btn--secondary view-btn">
+                    🎮 子ども向けプラン
+                    <span class="btn-desc">楽しい仕掛けいっぱい！</span>
+                </button>
+                <button id="map-btn" class="btn btn--outline view-btn">
+                    🗺️ 地図ページ
+                    <span class="btn-desc">移動ルートを確認</span>
+                </button>
+            </div>
+
+            <div class="trip-preview">
+                <div class="preview-cards">
+                    <div class="preview-card">
+                        <div class="card-icon">🛫</div>
+                        <h3>1日目</h3>
+                        <p>羽田→鹿児島</p>
+                    </div>
+                    <div class="preview-card">
+                        <div class="card-icon">🌋</div>
+                        <h3>2日目</h3>
+                        <p>そうめん流し＆砂蒸し風呂</p>
+                    </div>
+                    <div class="preview-card">
+                        <div class="card-icon">🌌</div>
+                        <h3>3日目</h3>
+                        <p>桜島＆遊び場</p>
+                    </div>
+                    <div class="preview-card">
+                        <div class="card-icon">✈️</div>
+                        <h3>4日目</h3>
+                        <p>空港遊び＆帰宅</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 大人向けページ -->
+    <div id="adult-page" class="page hidden">
+        <div class="container">
+            <header class="page-header">
+                <button id="back-to-top" class="btn btn--outline btn--sm">← トップに戻る</button>
+                <h1>大人向けプラン</h1>
+                <div class="header-nav">
+                    <button id="switch-to-kids" class="btn btn--secondary btn--sm">子ども向けに切り替え</button>
+                    <button id="switch-to-map" class="btn btn--outline btn--sm">地図で確認</button>
+                </div>
+            </header>
+
+            <div class="day-nav">
+                <button class="day-btn active" data-day="1">1日目</button>
+                <button class="day-btn" data-day="2">2日目</button>
+                <button class="day-btn" data-day="3">3日目</button>
+                <button class="day-btn" data-day="4">4日目</button>
+            </div>
+
+            <div id="adult-content">
+                <!-- コンテンツはJavaScriptで動的に生成 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 子ども向けページ -->
+    <div id="kids-page" class="page hidden">
+        <div class="container">
+            <header class="kids-header">
+                <button id="kids-back-to-top" class="btn btn--outline btn--sm">← トップに戻る</button>
+                <h1>🎉 わくわく旅行しおり 🎉</h1>
+                <div class="header-nav">
+                    <button id="switch-to-adult" class="btn btn--primary btn--sm">大人向けに切り替え</button>
+                    <button id="kids-switch-to-map" class="btn btn--outline btn--sm">地図で確認</button>
+                </div>
+                <div class="stars-collected">
+                    <span>⭐ 集めた星: </span><span id="star-count">0</span>/4
+                </div>
+            </header>
+
+            <div class="kids-day-nav">
+                <button class="kids-day-btn active" data-day="1">
+                    <span class="day-icon">🛫</span>
+                    <span class="day-text">1日目</span>
+                    <span class="day-star" data-day="1">☆</span>
+                </button>
+                <button class="kids-day-btn" data-day="2">
+                    <span class="day-icon">🌋</span>
+                    <span class="day-text">2日目</span>
+                    <span class="day-star" data-day="2">☆</span>
+                </button>
+                <button class="kids-day-btn" data-day="3">
+                    <span class="day-icon">🌌</span>
+                    <span class="day-text">3日目</span>
+                    <span class="day-star" data-day="3">☆</span>
+                </button>
+                <button class="kids-day-btn" data-day="4">
+                    <span class="day-icon">✈️</span>
+                    <span class="day-text">4日目</span>
+                    <span class="day-star" data-day="4">☆</span>
+                </button>
+            </div>
+
+            <div id="kids-content">
+                <!-- コンテンツはJavaScriptで動的に生成 -->
+            </div>
+
+            <div class="hidden-character" id="hidden-dog">
+                🐕 薩摩犬を見つけた！
+            </div>
+        </div>
+    </div>
+
+    <!-- 地図ページ -->
+    <div id="map-page" class="page hidden">
+        <div class="container">
+            <header class="map-header">
+                <button id="map-back-to-top" class="btn btn--outline btn--sm">← トップに戻る</button>
+                <h1>🗺️ 旅行ルート地図</h1>
+                <div class="header-nav">
+                    <button id="map-switch-to-adult" class="btn btn--primary btn--sm">大人向けに切り替え</button>
+                    <button id="map-switch-to-kids" class="btn btn--secondary btn--sm">子ども向けに切り替え</button>
+                </div>
+            </header>
+
+            <div class="map-controls">
+                <div class="day-filters">
+                    <h3>表示する日程</h3>
+                    <div class="filter-checkboxes">
+                        <label class="filter-checkbox">
+                            <input type="checkbox" data-day="1" checked>
+                            <span class="checkbox-day" style="background-color: #3B82F6;">1日目</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" data-day="2" checked>
+                            <span class="checkbox-day" style="background-color: #10B981;">2日目</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" data-day="3" checked>
+                            <span class="checkbox-day" style="background-color: #F59E0B;">3日目</span>
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" data-day="4" checked>
+                            <span class="checkbox-day" style="background-color: #EF4444;">4日目</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="map-info">
+                    <div class="legend">
+                        <h4>マーカーの説明</h4>
+                        <div class="legend-items">
+                            <div class="legend-item">
+                                <span class="legend-icon">✈️</span>
+                                <span>空港</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-icon">🏨</span>
+                                <span>宿泊施設</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-icon">🍽️</span>
+                                <span>レストラン</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-icon">📸</span>
+                                <span>観光地</span>
+                            </div>
+                            <div class="legend-item">
+                                <span class="legend-icon">🎯</span>
+                                <span>体験・活動</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="map-container" style="position: relative; height: 600px;">
+                <div id="travel-map" style="height: 100%; width: 100%;"></div>
+            </div>
+
+            <div class="map-quick-zoom">
+                <h3>エリア別ズーム</h3>
+                <div class="zoom-buttons">
+                    <button class="btn btn--outline btn--sm" onclick="zoomToArea('all')">全体表示</button>
+                    <button class="btn btn--outline btn--sm" onclick="zoomToArea('kagoshima')">鹿児島市内</button>
+                    <button class="btn btn--outline btn--sm" onclick="zoomToArea('ibusuki')">指宿エリア</button>
+                    <button class="btn btn--outline btn--sm" onclick="zoomToArea('kirishima')">霧島エリア</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- モーダル（子ども向けの仕掛け用） -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="app.js"></script>
+</body>
+</html>
