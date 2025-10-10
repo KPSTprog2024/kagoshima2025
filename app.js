@@ -5,74 +5,74 @@ const travelData = {
         1: {
             date: "10/10（金）",
             title: "羽田 → 鹿児島市内",
-            kidsTitle: "はねだ → かごしまのまち",
+            kidsTitle: "羽田（はねだ） → 鹿児島（かごしま）のまち",
             theme: "到着日",
-            kidsTheme: "とうちゃくのひ",
+            kidsTheme: "到着（とうちゃく）の日（ひ）",
             icon: "🛫",
             activities: [
-                { time: "18:40", activity: "ANA627便で鹿児島空港着", kidsActivity: "ANA627ごうで かごしまくうこうに とうちゃく", type: "travel" },
-                { time: "19:10", activity: "荷物受け取り後 → 空港3F「いわさきのキッチンさつま」で夕食（黒豚料理）", kidsActivity: "にもつを うけとったら → くうこう3かい『いわさきのきっちんさつま』で ゆうごはん（くろぶたりょうり）", type: "meal" },
-                { time: "19:50", activity: "レンタカー受取", kidsActivity: "れんたかーを うけとるよ", type: "logistics" },
-                { time: "20:00〜21:00", activity: "鹿児島市内へ移動", kidsActivity: "かごしまのまちへ くるまで いどう", type: "travel" },
-                { time: "21:00", activity: "ホテル法華クラブ鹿児島 チェックイン", kidsActivity: "ほてるほっけくらぶ かごしまで ちぇっくいん", type: "accommodation" }
+                { time: "18:40", activity: "ANA627便で鹿児島空港着", kidsActivity: "ANA627ごうで 鹿児島（かごしま）空港（くうこう）に 到着（とうちゃく）", type: "travel" },
+                { time: "19:10", activity: "荷物受け取り後 → 空港3F「いわさきのキッチンさつま」で夕食（黒豚料理）", kidsActivity: "荷物（にもつ）を 受（う）けとったら → 空港（くうこう）3かい『いわさきのキッチンさつま』で 夕食（ゆうしょく）に 黒豚（くろぶた）料理（りょうり）", type: "meal" },
+                { time: "19:50", activity: "レンタカー受取", kidsActivity: "レンタカーを 受（う）けとるよ", type: "logistics" },
+                { time: "20:00〜21:00", activity: "鹿児島市内へ移動", kidsActivity: "鹿児島（かごしま）のまちへ 車（くるま）で 移動（いどう）", type: "travel" },
+                { time: "21:00", activity: "ホテル法華クラブ鹿児島 チェックイン", kidsActivity: "ホテル法華（ほっけ）クラブ 鹿児島（かごしま）で チェックイン", type: "accommodation" }
             ]
         },
         2: {
             date: "10/11（土）",
             title: "鹿児島市 → 指宿",
-            kidsTitle: "かごしま → いぶすき",
+            kidsTitle: "鹿児島（かごしま） → 指宿（いぶすき）",
             theme: "そうめん流し＆砂蒸し風呂",
-            kidsTheme: "ぐるぐるそうめんと すなむしぶろ",
+            kidsTheme: "ぐるぐる そうめんと 砂蒸（すなむ）し風呂（ぶろ）",
             icon: "🌋",
             activities: [
-                { time: "10:00", activity: "ホテル出発", kidsActivity: "ほてるを しゅっぱつ", type: "travel" },
-                { time: "11:40", activity: "唐船峡そうめん流し 到着 → ランチ（回転式そうめん＋マス塩焼き定食）", kidsActivity: "とうせんきょうの そうめんながしに とうちゃく → ぐるぐるそうめんと ますのしおやきらんち", type: "meal" },
-                { time: "12:40", activity: "長崎鼻へ移動", kidsActivity: "ながさきばなへ くるまで いどう", type: "travel" },
-                { time: "13:00–14:00", activity: "長崎鼻散策（灯台・龍宮神社・浦島像）", kidsActivity: "ながさきばなを さんぽ（とうだい・りゅうぐうじんじゃ・うらしまず）", type: "sightseeing" },
-                { time: "14:30", activity: "指宿フェニックスホテル チェックイン", kidsActivity: "いぶすきふぇにっくすほてるで ちぇっくいん", type: "accommodation" },
-                { time: "15:00–16:00", activity: "砂蒸し風呂体験（家族交代で）", kidsActivity: "すなむしぶろたいけん（じゅんばんで はいるよ）", type: "activity", interactive: true },
-                { time: "16:00–17:30", activity: "大浴場・露天風呂", kidsActivity: "おおきなおふろと ろてんぶろ", type: "relaxation" },
-                { time: "18:00", activity: "夕食（郷土料理会席）", kidsActivity: "ゆうごはん（きょうどのごちそう）", type: "meal" },
-                { time: "夜", activity: "部屋でくつろぎ", kidsActivity: "よるは へやで のんびり", type: "relaxation" }
+                { time: "10:00", activity: "ホテル出発", kidsActivity: "ホテルを 出発（しゅっぱつ）", type: "travel" },
+                { time: "11:40", activity: "唐船峡そうめん流し 到着 → ランチ（回転式そうめん＋マス塩焼き定食）", kidsActivity: "唐船峡（とうせんきょう）の そうめん流（なが）しに 到着（とうちゃく） → ぐるぐる そうめんと マスの 塩焼（しおや）きランチ", type: "meal" },
+                { time: "12:40", activity: "長崎鼻へ移動", kidsActivity: "長崎鼻（ながさきばな）へ 車（くるま）で 移動（いどう）", type: "travel" },
+                { time: "13:00–14:00", activity: "長崎鼻散策（灯台・龍宮神社・浦島像）", kidsActivity: "長崎鼻（ながさきばな）を 散歩（さんぽ）（灯台（とうだい）・龍宮（りゅうぐう）神社（じんじゃ）・浦島（うらしま）像（ぞう））", type: "sightseeing" },
+                { time: "14:30", activity: "指宿フェニックスホテル チェックイン", kidsActivity: "指宿（いぶすき）フェニックスホテルで チェックイン", type: "accommodation" },
+                { time: "15:00–16:00", activity: "砂蒸し風呂体験（家族交代で）", kidsActivity: "砂蒸（すなむ）し風呂（ぶろ）体験（たいけん）（順番（じゅんばん）で 入（はい）るよ）", type: "activity", interactive: true },
+                { time: "16:00–17:30", activity: "大浴場・露天風呂", kidsActivity: "大（おお）きな お風呂（ふろ）と 露天（ろてん）風呂（ぶろ）", type: "relaxation" },
+                { time: "18:00", activity: "夕食（郷土料理会席）", kidsActivity: "夕食（ゆうしょく）（郷土（きょうど）の ごちそう）", type: "meal" },
+                { time: "夜", activity: "部屋でくつろぎ", kidsActivity: "夜（よる）は 部屋（へや）で のんびり", type: "relaxation" }
             ]
         },
         3: {
             date: "10/12（日）",
             title: "指宿 → 霧島",
-            kidsTitle: "いぶすき → きりしま",
+            kidsTitle: "指宿（いぶすき） → 霧島（きりしま）",
             theme: "桜島＆遊び場",
-            kidsTheme: "さくらじまと あそびば",
+            kidsTheme: "桜島（さくらじま）と 遊（あそ）び場（ば）",
             icon: "🌌",
             activities: [
-                { time: "09:30", activity: "ホテル出発", kidsActivity: "ほてるを しゅっぱつ", type: "travel" },
-                { time: "11:30–12:30", activity: "桜島サービスエリアでランチ＋展望（桜島ビュー）", kidsActivity: "さくらじまさーびすえりあで らんち と けしき", type: "meal", interactive: true },
-                { time: "14:00–15:00", activity: "神話の里公園（ローラー滑り台・アスレチック）", kidsActivity: "しんわのさとこうえんで ろーらーすべりだい と あすれちっく", type: "activity", interactive: true },
-                { time: "オプション", activity: "子どもが飽きたら→霧島神宮参拝（車15分）", kidsActivity: "もっと あそびたいひとは → くるまで15ふんの きりしまじんぐうに おまいり", type: "sightseeing" },
-                { time: "15:30–16:00", activity: "界霧島 チェックイン", kidsActivity: "かい きりしまで ちぇっくいん", type: "accommodation" },
-                { time: "16:00以降", activity: "温泉・ご当地楽（文化体験）・夕食", kidsActivity: "おんせんと ごとうちたいけん と ゆうごはん", type: "relaxation" },
-                { time: "夜", activity: "星空セルフ観賞、ラウンジでのんびり", kidsActivity: "よるは ほしぞらを みたり らうんじで のんびり", type: "relaxation", interactive: true }
+                { time: "09:30", activity: "ホテル出発", kidsActivity: "ホテルを 出発（しゅっぱつ）", type: "travel" },
+                { time: "11:30–12:30", activity: "桜島サービスエリアでランチ＋展望（桜島ビュー）", kidsActivity: "桜島（さくらじま）サービスエリアで ランチ と 景色（けしき）", type: "meal", interactive: true },
+                { time: "14:00–15:00", activity: "神話の里公園（ローラー滑り台・アスレチック）", kidsActivity: "神話（しんわ）の里（さと）公園（こうえん）で ローラーすべり台（だい）と アスレチック", type: "activity", interactive: true },
+                { time: "オプション", activity: "子どもが飽きたら→霧島神宮参拝（車15分）", kidsActivity: "もっと 遊（あそ）びたい人（ひと）は → 車（くるま）で15分（ふん）の 霧島（きりしま）神宮（じんぐう）に お参（まい）り", type: "sightseeing" },
+                { time: "15:30–16:00", activity: "界霧島 チェックイン", kidsActivity: "界（かい）霧島（きりしま）で チェックイン", type: "accommodation" },
+                { time: "16:00以降", activity: "温泉・ご当地楽（文化体験）・夕食", kidsActivity: "温泉（おんせん）と ご当地（とうち）体験（たいけん）と 夕食（ゆうしょく）", type: "relaxation" },
+                { time: "夜", activity: "星空セルフ観賞、ラウンジでのんびり", kidsActivity: "夜（よる）は 星空（ほしぞら）を 見（み）たり ラウンジで のんびり", type: "relaxation", interactive: true }
             ]
         },
         4: {
             date: "10/13（月）",
             title: "霧島 → 鹿児島空港 → 羽田",
-            kidsTitle: "きりしま → かごしまくうこう → はねだ",
+            kidsTitle: "霧島（きりしま） → 鹿児島（かごしま）空港（くうこう） → 羽田（はねだ）",
             theme: "空港遊び＆帰宅",
-            kidsTheme: "くうこうあそびと かえりみち",
+            kidsTheme: "空港（くうこう）あそびと 帰（かえ）り道（みち）",
             icon: "✈️",
             activities: [
-                { time: "07:00", activity: "朝風呂", kidsActivity: "あさのおふろ", type: "relaxation" },
-                { time: "08:00", activity: "朝食", kidsActivity: "あさごはん", type: "meal" },
-                { time: "09:30–10:30", activity: "界霧島でゆっくり（庭散策・読書）", kidsActivity: "かい きりしまで にわを さんぽ したり ほんを よんだり", type: "relaxation" },
-                { time: "10:30", activity: "チェックアウト → 空港へ（約30分）", kidsActivity: "ちぇっくあうと → くうこうへ（くるまで やく30ぷん）", type: "travel" },
-                { time: "11:00–11:30", activity: "レンタカー返却", kidsActivity: "れんたかーを かえすよ", type: "logistics" },
-                { time: "11:30–13:00", activity: "空港でランチ＆観光（空港内スポット）", kidsActivity: "くうこうで らんち と みどころ たんけん", type: "meal" },
-                { time: "", activity: "SORA STAGE 航空展示室", kidsActivity: "そらすてーじ ひこうきの てんじしつ", type: "activity", interactive: true },
-                { time: "", activity: "展望デッキ", kidsActivity: "てんぼうでっき", type: "sightseeing" },
-                { time: "", activity: "足湯「おやっとさぁ」", kidsActivity: "あしゆ『おやっとさぁ』", type: "relaxation" },
-                { time: "", activity: "キッズコーナー（保安検査後）", kidsActivity: "きっずこーなー（ていさつのあと）", type: "activity", interactive: true },
-                { time: "13:25", activity: "保安検査", kidsActivity: "ていさつ", type: "logistics" },
-                { time: "14:15", activity: "ANA626便 鹿児島発 → 16:00 羽田着", kidsActivity: "ANA626ごうで かごしまを しゅっぱつ → 16:00には  はねだに とうちゃく", type: "travel", interactive: true }
+                { time: "07:00", activity: "朝風呂", kidsActivity: "朝（あさ）のお風呂（ふろ）", type: "relaxation" },
+                { time: "08:00", activity: "朝食", kidsActivity: "朝（あさ）ごはん", type: "meal" },
+                { time: "09:30–10:30", activity: "界霧島でゆっくり（庭散策・読書）", kidsActivity: "界（かい）霧島（きりしま）で 庭（にわ）を 散歩（さんぽ）したり 本（ほん）を 読（よ）んだり", type: "relaxation" },
+                { time: "10:30", activity: "チェックアウト → 空港へ（約30分）", kidsActivity: "チェックアウト → 空港（くうこう）へ（車（くるま）で 約（やく）30分（ぷん））", type: "travel" },
+                { time: "11:00–11:30", activity: "レンタカー返却", kidsActivity: "レンタカーを 返（かえ）すよ", type: "logistics" },
+                { time: "11:30–13:00", activity: "空港でランチ＆観光（空港内スポット）", kidsActivity: "空港（くうこう）で ランチ と 見（み）どころ 探検（たんけん）", type: "meal" },
+                { time: "", activity: "SORA STAGE 航空展示室", kidsActivity: "SORA STAGE 航空（こうくう）展示（てんじ）室（しつ）", type: "activity", interactive: true },
+                { time: "", activity: "展望デッキ", kidsActivity: "展望（てんぼう）デッキ", type: "sightseeing" },
+                { time: "", activity: "足湯「おやっとさぁ」", kidsActivity: "足湯（あしゆ）『おやっとさぁ』", type: "relaxation" },
+                { time: "", activity: "キッズコーナー（保安検査後）", kidsActivity: "キッズコーナー（保安（ほあん）検査（けんさ）のあと）", type: "activity", interactive: true },
+                { time: "13:25", activity: "保安検査", kidsActivity: "保安（ほあん）検査（けんさ）", type: "logistics" },
+                { time: "14:15", activity: "ANA626便 鹿児島発 → 16:00 羽田着", kidsActivity: "ANA626ごうで 鹿児島（かごしま）を 出発（しゅっぱつ） → 16:00には 羽田（はねだ）に 到着（とうちゃく）", type: "travel", interactive: true }
             ]
         }
     }
