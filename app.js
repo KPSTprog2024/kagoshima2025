@@ -14,7 +14,7 @@ const travelData = {
                 { time: "19:10", activity: "荷物受け取り後 → 空港3F「いわさきのキッチンさつま」で夕食（黒豚料理）", kidsActivity: "荷物（にもつ）を 受（う）けとったら → 空港（くうこう）3かい『いわさきのキッチンさつま』で 夕食（ゆうしょく）に 黒豚（くろぶた）料理（りょうり）", type: "meal" },
                 { time: "19:50", activity: "レンタカー受取", kidsActivity: "レンタカーを 受（う）けとるよ", type: "logistics" },
                 { time: "20:00〜21:00", activity: "鹿児島市内へ移動", kidsActivity: "鹿児島（かごしま）のまちへ 車（くるま）で 移動（いどう）", type: "travel" },
-                { time: "21:00", activity: "ホテル法華クラブ鹿児島 チェックイン", kidsActivity: "ホテル法華（ほっけ）クラブ 鹿児島（かごしま）で チェックイン", type: "accommodation" }
+                { time: "21:00", activity: "ホテル チェックイン", kidsActivity: "ホテルで チェックイン", type: "accommodation" }
             ]
         },
         2: {
@@ -29,7 +29,7 @@ const travelData = {
                 { time: "11:40", activity: "唐船峡そうめん流し 到着 → ランチ（回転式そうめん＋マス塩焼き定食）", kidsActivity: "唐船峡（とうせんきょう）の そうめん流（なが）しに 到着（とうちゃく） → ぐるぐる そうめんと マスの 塩焼（しおや）きランチ", type: "meal" },
                 { time: "12:40", activity: "長崎鼻へ移動", kidsActivity: "長崎鼻（ながさきばな）へ 車（くるま）で 移動（いどう）", type: "travel" },
                 { time: "13:00–14:00", activity: "長崎鼻散策（灯台・龍宮神社・浦島像）", kidsActivity: "長崎鼻（ながさきばな）を 散歩（さんぽ）（灯台（とうだい）・龍宮（りゅうぐう）神社（じんじゃ）・浦島（うらしま）像（ぞう））", type: "sightseeing" },
-                { time: "14:30", activity: "指宿フェニックスホテル チェックイン", kidsActivity: "指宿（いぶすき）フェニックスホテルで チェックイン", type: "accommodation" },
+                { time: "14:30", activity: "ホテル チェックイン", kidsActivity: "ホテルで チェックイン", type: "accommodation" },
                 { time: "15:00–16:00", activity: "砂蒸し風呂体験（家族交代で）", kidsActivity: "砂蒸（すなむ）し風呂（ぶろ）体験（たいけん）（順番（じゅんばん）で 入（はい）るよ）", type: "activity", interactive: true },
                 { time: "16:00–17:30", activity: "大浴場・露天風呂", kidsActivity: "大（おお）きな お風呂（ふろ）と 露天（ろてん）風呂（ぶろ）", type: "relaxation" },
                 { time: "18:00", activity: "夕食（郷土料理会席）", kidsActivity: "夕食（ゆうしょく）（郷土（きょうど）の ごちそう）", type: "meal" },
@@ -48,7 +48,7 @@ const travelData = {
                 { time: "11:30–12:30", activity: "桜島サービスエリアでランチ＋展望（桜島ビュー）", kidsActivity: "桜島（さくらじま）サービスエリアで ランチ と 景色（けしき）", type: "meal", interactive: true },
                 { time: "14:00–15:00", activity: "神話の里公園（ローラー滑り台・アスレチック）", kidsActivity: "神話（しんわ）の里（さと）公園（こうえん）で ローラーすべり台（だい）と アスレチック", type: "activity", interactive: true },
                 { time: "オプション", activity: "子どもが飽きたら→霧島神宮参拝（車15分）", kidsActivity: "もっと 遊（あそ）びたい人（ひと）は → 車（くるま）で15分（ふん）の 霧島（きりしま）神宮（じんぐう）に お参（まい）り", type: "sightseeing" },
-                { time: "15:30–16:00", activity: "界霧島 チェックイン", kidsActivity: "界（かい）霧島（きりしま）で チェックイン", type: "accommodation" },
+                { time: "15:30–16:00", activity: "ホテル チェックイン", kidsActivity: "ホテルで チェックイン", type: "accommodation" },
                 { time: "16:00以降", activity: "温泉・ご当地楽（文化体験）・夕食", kidsActivity: "温泉（おんせん）と ご当地（とうち）体験（たいけん）と 夕食（ゆうしょく）", type: "relaxation" },
                 { time: "夜", activity: "星空セルフ観賞、ラウンジでのんびり", kidsActivity: "夜（よる）は 星空（ほしぞら）を 見（み）たり ラウンジで のんびり", type: "relaxation", interactive: true }
             ]
@@ -63,7 +63,7 @@ const travelData = {
             activities: [
                 { time: "07:00", activity: "朝風呂", kidsActivity: "朝（あさ）のお風呂（ふろ）", type: "relaxation" },
                 { time: "08:00", activity: "朝食", kidsActivity: "朝（あさ）ごはん", type: "meal" },
-                { time: "09:30–10:30", activity: "界霧島でゆっくり（庭散策・読書）", kidsActivity: "界（かい）霧島（きりしま）で 庭（にわ）を 散歩（さんぽ）したり 本（ほん）を 読（よ）んだり", type: "relaxation" },
+                { time: "09:30–10:30", activity: "ホテルでゆっくり（庭散策・読書）", kidsActivity: "ホテルで 庭（にわ）を 散歩（さんぽ）したり 本（ほん）を 読（よ）んだり", type: "relaxation" },
                 { time: "10:30", activity: "チェックアウト → 空港へ（約30分）", kidsActivity: "チェックアウト → 空港（くうこう）へ（車（くるま）で 約（やく）30分（ぷん））", type: "travel" },
                 { time: "11:00–11:30", activity: "レンタカー返却", kidsActivity: "レンタカーを 返（かえ）すよ", type: "logistics" },
                 { time: "11:30–13:00", activity: "空港でランチ＆観光（空港内スポット）", kidsActivity: "空港（くうこう）で ランチ と 見（み）どころ 探検（たんけん）", type: "meal" },
@@ -89,7 +89,7 @@ const mapData = {
             icon: "✈️"
         },
         hotel_hokke_club: {
-            name: "ホテル法華クラブ鹿児島",
+            name: "鹿児島市内のホテル",
             coordinates: [31.5882592, 130.5506142],
             type: "accommodation",
             days: [1],
@@ -110,7 +110,7 @@ const mapData = {
             icon: "📸"
         },
         ibusuki_phoenix: {
-            name: "指宿フェニックスホテル",
+            name: "指宿エリアのホテル",
             coordinates: [31.2344, 130.6377],
             type: "accommodation",
             days: [2],
@@ -138,7 +138,7 @@ const mapData = {
             icon: "📸"
         },
         kai_kirishima: {
-            name: "界霧島",
+            name: "霧島のホテル",
             coordinates: [31.868081, 130.871389],
             type: "accommodation",
             days: [3, 4],
@@ -152,7 +152,7 @@ const mapData = {
             color: "#3B82F6",
             route: [
                 {lat: 31.8008599, lng: 130.7162193, name: "鹿児島空港", time: "18:40", activity: "ANA627便で鹿児島空港着"},
-                {lat: 31.5882592, lng: 130.5506142, name: "ホテル法華クラブ鹿児島", time: "21:00", activity: "チェックイン"}
+                {lat: 31.5882592, lng: 130.5506142, name: "鹿児島市内のホテル", time: "21:00", activity: "ホテル チェックイン"}
             ]
         },
         day2: {
@@ -160,10 +160,10 @@ const mapData = {
             title: "鹿児島市 → 指宿",
             color: "#10B981",
             route: [
-                {lat: 31.5882592, lng: 130.5506142, name: "ホテル法華クラブ鹿児島", time: "10:00", activity: "ホテル出発"},
+                {lat: 31.5882592, lng: 130.5506142, name: "鹿児島市内のホテル", time: "10:00", activity: "ホテル出発"},
                 {lat: 31.220141, lng: 130.542595, name: "唐船峡そうめん流し", time: "11:40", activity: "ランチ（回転式そうめん＋マス塩焼き定食）"},
                 {lat: 31.15588, lng: 130.586625, name: "長崎鼻", time: "13:00", activity: "散策（灯台・龍宮神社・浦島像）"},
-                {lat: 31.2344, lng: 130.6377, name: "指宿フェニックスホテル", time: "14:30", activity: "チェックイン・砂蒸し風呂体験"}
+                {lat: 31.2344, lng: 130.6377, name: "指宿エリアのホテル", time: "14:30", activity: "ホテル チェックイン・砂蒸し風呂体験"}
             ]
         },
         day3: {
@@ -171,11 +171,11 @@ const mapData = {
             title: "指宿 → 霧島",
             color: "#F59E0B",
             route: [
-                {lat: 31.2344, lng: 130.6377, name: "指宿フェニックスホテル", time: "09:30", activity: "ホテル出発"},
+                {lat: 31.2344, lng: 130.6377, name: "指宿エリアのホテル", time: "09:30", activity: "ホテル出発"},
                 {lat: 31.727604, lng: 130.614591, name: "桜島サービスエリア", time: "11:30", activity: "ランチ＋展望（桜島ビュー）"},
                 {lat: 31.863496, lng: 130.851221, name: "神話の里公園", time: "14:00", activity: "ローラー滑り台・アスレチック"},
                 {lat: 31.8589325, lng: 130.8717269, name: "霧島神宮", time: "オプション", activity: "参拝"},
-                {lat: 31.868081, lng: 130.871389, name: "界霧島", time: "15:30", activity: "チェックイン・温泉"}
+                {lat: 31.868081, lng: 130.871389, name: "霧島のホテル", time: "15:30", activity: "ホテル チェックイン・温泉"}
             ]
         },
         day4: {
@@ -183,7 +183,7 @@ const mapData = {
             title: "霧島 → 鹿児島空港 → 羽田",
             color: "#EF4444",
             route: [
-                {lat: 31.868081, lng: 130.871389, name: "界霧島", time: "10:30", activity: "チェックアウト"},
+                {lat: 31.868081, lng: 130.871389, name: "霧島のホテル", time: "10:30", activity: "チェックアウト"},
                 {lat: 31.8008599, lng: 130.7162193, name: "鹿児島空港", time: "11:00", activity: "空港内観光・ANA626便で羽田へ"}
             ]
         }
